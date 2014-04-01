@@ -1,4 +1,4 @@
-org-cworks-prj
+gradle-ear
 ====================================
 
 A sample project that shows one way to build those nasty ear artifacts that J2EE containers use.
