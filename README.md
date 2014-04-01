@@ -1,7 +1,7 @@
 gradle-ear
 ====================================
 
-A sample project that shows one way to build those nasty ear artifacts that J2EE containers use.
+A sample project that shows one way to build those pesky ear artifacts that J2EE containers use.
 
 ##build notes:
 
