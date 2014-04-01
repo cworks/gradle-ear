@@ -1,13 +1,7 @@
-com-ar-reportsrv (aka Report Server)
+org-cworks-prj
 ====================================
 
-##dependency order:
-
-1. reportsrv-client -> com-ar-shared
-2. reportsrv-core -> com-ar-shared, prodcycle-client
-3. reportsrv-ejb -> com-ar-shared, reportsrv-client, reportsrv-core
-4. reportsrv-jasper -> reportsrv-core
-5. reportsrv-web -> reportsrv-core
+A sample project that shows one way to build those nasty ear artifacts that J2EE containers use.
 
 ##build notes:
 
@@ -15,7 +9,7 @@ There is an issue with the gradle ear plugin that causes a war file:
 
     dependencies {
         ...
-        deploy project(":reportsrv-web")
+        deploy project(":web")
         ...
     }
 
@@ -26,9 +20,6 @@ The work around looks like:
 
     dependencies {
         ...
-        deploy project(path: ":reportsrv-web", configuration: "archives")
+        deploy project(path: ":web", configuration: "archives")
         ...
     }
-
-For the record I have no real clue why this works, I just noticed it happening and searched for a
-solution and came across the work around on the gradle forums (link above).
