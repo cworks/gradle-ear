@@ -1,0 +1,32 @@
+# eclipse
+.settings/
+*.classpath
+*.project
+
+# intellij
+.idea/
+*.iml
+*.iws
+*.ipr
+out
+test-output
+
+# apple
+.DS_Store
+
+# maven
+target/
+
+# ant
+build
+
+# misc
+log/
+logs/
+bin/
+
+#gradle
+gradle.properties
+build/
+buildSrc/build
+.gradle
