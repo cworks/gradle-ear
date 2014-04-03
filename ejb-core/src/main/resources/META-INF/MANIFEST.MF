@@ -1,1 +1,0 @@
-Class-Path: lib/reportserver-ejb.jar lib/log4j.jar
